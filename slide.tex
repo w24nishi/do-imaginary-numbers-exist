@@ -1,0 +1,399 @@
+\documentclass[dvipdfmx]{beamer}
+
+\usetheme{Madrid}
+\useoutertheme[subsection=false]{smoothbars}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamerfont{footline}{size=\normalsize,series=\bfseries}
+\setbeamercolor{footline}{fg=black,bg=black}
+% \usefonttheme{professionalfonts}
+% \setbeamertemplate{frametitle}[default][center]
+% \setbeamercovered{transparent}
+
+\title{虚数って存在するの？}
+\author{西 航}
+\date{\today}
+
+\begin{document}
+  \maketitle
+
+  \begin{frame}
+    \frametitle{はじめに}
+  
+    \begin{alertblock}{質問する奴は偉い}
+      \begin{itemize}
+        \item 初めに質問する奴は偉い
+        \begin{itemize}
+          \item 次の人が続きやすくなる
+        \end{itemize}
+        \item 馬鹿な質問をする奴は偉い
+        \begin{itemize}
+          \item 質問の内容のハードルを下げる
+        \end{itemize}
+        \item 関係ない質問をする奴は偉い
+        \begin{itemize}
+          \item 話が広がる
+        \end{itemize}
+      \end{itemize}
+    \end{alertblock}
+
+    \begin{itemize}
+      \item \url{https://togetter.com/li/1116798} からパクりました。
+      \item 完全にその通りだと思います。
+      \item 今回、ところどころで質問タイムも設けるつもりですが、それに関係なく、いつでも何でも聞いてください。
+      \item 時間の都合で拾いきれない場合などは、回答は後日になるかもしれませんが、そういう場合であっても質問は大歓迎です。
+    \end{itemize}
+      
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{目次}
+ 
+    \tableofcontents
+
+  \end{frame}
+
+  \section{$\sqrt{-1}$について雑多な話}
+
+  \subsection{みんなぶっちゃけどう思ってるの？}
+
+  \begin{frame}
+    \frametitle{いくつかの質問}
+  
+    \begin{block}{質問1}
+      $\sqrt{-1}$は存在するか？
+    \end{block}
+
+    \pause
+
+    \begin{block}{質問2}
+      $-1$は存在するか？
+    \end{block}
+
+    \pause
+
+    \begin{block}{質問3}
+      $1$は存在するか？
+    \end{block}
+
+    \pause
+
+    \begin{block}{（筆者なりの）回答}
+      現代の数学は、これらの質問に答える必要がないように構成されている。
+    \end{block}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{もう1つ質問}
+  
+    \begin{block}{質問}
+      数とは何か？
+    \end{block}
+
+    \pause
+
+    \begin{block}{（筆者なりの）回答}
+      現代の数学は、この質問にも答える必要がないように構成されている。
+      強いて言えば、そのとき数だと思いたいものを数と呼べばよい。
+      ただし、
+      \begin{itemize}
+        \item 自然数とは何か？
+        \item 実数とは何か？
+      \end{itemize}
+      という質問であれば、ある程度答えることができる。
+    \end{block}
+  
+  \end{frame}
+
+  \subsection{あったりなかったりする$\sqrt{-1}$}
+
+  \begin{frame}
+    \frametitle{$\sqrt{-1}$はあったりなかったりする？}
+  
+    \begin{itemize}
+      \item $\sqrt{-1}$は、ある意味では存在します。
+      \item あなたは、マジで$5$で割った余りにしか興味がないとしましょう。
+      \begin{itemize}
+        \item そんなわけねえだろ、と思うかもしれませんが、そういう設定でお願いします。
+      \end{itemize}
+      \item あなたにとって整数とは、$0, 1, 2, 3, 4$だけのことです。
+      \begin{itemize}
+        \item $6$や$11$や$21$や$17426$といった整数は、あなたにとってはすべて$1$です。マジで$5$で割った余りにしか興味がないので。
+      \end{itemize}
+      \item あなたは、整数の足し算や掛け算ができます。たとえば、$3 \times 4 = 2$です。
+      \begin{itemize}
+        \item 普通の人は$12$と言うのでしょうが、あなたにとってそれは$2$です。
+      \end{itemize}
+    \end{itemize}
+  
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{マジで$5$で割った余りにしか興味がない人の話}
+  
+    \begin{itemize}
+      \item $-1$というのは、$1$を足して$0$になる数のこと。つまり$4$です。
+      \item $\sqrt{-1}$というのは、$2$乗して$4$になる数のこと。つまり$2$です。
+      \item あなたにとって、$\sqrt{-1}$は存在します。$2$のことですよね。
+      \begin{itemize}
+        \item 実は、$3$のことでもあります。
+      \end{itemize}
+    \end{itemize}
+  
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{マジで$7$で割った余りにしか興味がない人の話}
+  
+    \begin{itemize}
+      \item 続いて、マジで$7$で割った余りにしか興味がないとしましょう。
+      \item あなたにとって整数とは、$0, 1, 2, 3, 4, 5, 6$だけのことです。
+      \item あなたは、整数の足し算や掛け算ができます。たとえば、$3 \times 4 = 5$です。
+      \pause
+      \item $-1$というのは、$1$を足して$0$になる数のこと。つまり$6$です。
+      \item $\sqrt{-1}$というのは、$2$乗して$6$になる数のことですが…
+      \item $0, 1, 2, 3, 4, 5, 6$のどれも、$2$乗して$6$にはなりません。
+      \item $\sqrt{-1}$は存在しませんね。
+    \end{itemize}
+  
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{いったんまとめ}
+  
+    \begin{itemize}
+      \item 現代の数学は、$\sqrt{-1}$は存在するか？数とは何か？といった疑問に答える必要がないように構成されている。
+      \item $\sqrt{-1}$が存在することが証明できるようなセッティングもあるし、存在しないことが証明できるようなセッティングもある。
+    \end{itemize}
+
+    \begin{block}{この章はこれで終わり}
+      質問などあればいつでもどうぞ！
+    \end{block}
+  
+  \end{frame}
+
+  \section{複素数を使うと嬉しいという話}
+
+  \subsection{3次方程式の解の公式}
+
+  \begin{frame}
+    \frametitle{2次方程式の解の公式}
+  
+    次の事実は、おそらく一度は勉強したことがあると思います。
+    \begin{block}{2次方程式の解の公式}
+      方程式
+      \[
+        x^2 + ax + b = 0
+      \]
+      の解は、
+      \[
+        x = \frac{-a \pm \sqrt{a^2 - 4b}}{2}
+      \]
+      である。
+    \end{block}
+    この公式で$\sqrt{}$の中身が負になる場合、
+    現代的には「複素数解が存在する」と思ってよいわけですが、
+    歴史的には、なかなかそうはならなかったようです。
+
+    それは当然といえば当然で、
+    複素数に慣れていない人にとっては「複素数解がある」と考えるほうが非常識、
+    解なしとするのが常識的でしょう。
+  
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{3次方程式の解の公式}
+  
+    では、次の公式はご存知でしょうか。
+    \begin{block}{3次方程式の解の公式}
+      方程式
+      \[
+        x^3 + ax^2 + bx + c = 0
+      \]
+      の解の1つは、
+      \[
+        x = \sqrt[3]{\frac{q}{2} + \frac{\sqrt{27q^2 + 4p^3}}{6\sqrt{3}}} + \sqrt[3]{\frac{q}{2} - \frac{\sqrt{27q^2 + 4p^3}}{6\sqrt{3}}} - \frac{a}{3} 
+      \]
+      である。
+      ただし、$p, q$は$a, b, c$を使って
+      \[
+        p = \frac{-a^2}{3} + b, q = \frac{2a^3}{27} - \frac{ab}{3} + c
+      \]
+      で与えられる数とする。
+    \end{block}
+  
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{3次方程式の解の公式}
+  
+    公式は知らなくても全く問題ないですが、とにかく、この公式を使って
+    \[
+      x^3 - 15x - 4 = 0
+    \]
+    を解いてみましょう。
+    途中式は省略しますが、計算すると
+    \[
+      x = \sqrt[3]{2 + 11\sqrt{-1}} + \sqrt[3]{2 - 11\sqrt{-1}}
+    \]
+    となります。
+    $(2 \pm \sqrt{-1})^3 = 2 \pm 11\sqrt{-1}$ なので、結局
+    \[
+    \begin{split}
+      x & = (2 + \sqrt{-1}) + (2 - \sqrt{-1})\\
+        & = 4
+    \end{split}
+    \]
+    です。
+    実際、
+    \[
+      4^3 - 15 \times 4 - 4 = 0
+    \]
+    なので、この公式が正しいことがわかります。
+  
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{3次方程式の解の公式}
+  
+    \begin{itemize}
+      \item 現代の人間としては、これで3次方程式を解くことができた、めでたしめでたし、となるわけですが…
+      \item この公式（を、この方程式にあてはめた結果）は、発見された16世紀当時には、かなり「ヤバい」方法とされたようです。
+      \item $x = \sqrt[3]{2 + 11\sqrt{-1}} + \sqrt[3]{2 - 11\sqrt{-1}} = 4$
+      \pause
+      \item 解は結果的にはちゃんと求まってるけど、\alert{負の数の平方根とかいうあり得ないもの}を経由しとるやんけ！！！
+      \pause
+      \item 歴史には詳しくないですが、どうやら当時（というか17世紀くらいまでのヨーロッパで）は、負の数にすら抵抗があったようです。
+      \item でも3次方程式が解けないよりは、解けるほうがどう考えてもいいですよね。
+      \item これは、「虚数を数学的な考察の対象から外してしまうことがもったいない理由」の1つになりそうです。
+    \end{itemize}
+  
+  \end{frame}
+
+  \subsection{ガウス整数}
+
+  \begin{frame}
+    \frametitle{素数クイズ}
+  
+    突然ですが、次の問題を考えてみてください。
+    \begin{block}{問題}
+      $2501$は素数か？
+    \end{block}
+    \pause
+    次の等式がヒントです。
+    \begin{block}{ヒント}
+      $2501 = 50^2 + 1^2 = 49^2 + 10^2$
+    \end{block}
+  
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{答え}
+  
+    \begin{block}{答え}
+      $2501$は素数ではない。
+    \end{block}
+    \begin{itemize}
+      \item $2501 = 41 \times 61$です。
+      \item $41$と$61$は素数なので、暗算で見つけるのはそれほど簡単ではないと思います。
+      \item $2501 = 51^2 - 10^2$に気づけば、数秒で答えられた人もいたかも？
+      \begin{itemize}
+        \item $51^2 - 10^2 = (51+10)(51-10)$ ですね。
+        \item 一般に $a^2 - b^2 = (a+b)(a-b)$ です。
+      \end{itemize}
+    \end{itemize}
+  
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{どのあたりがヒントになっていたか}
+  
+    \begin{itemize}
+      \item $2501 = 50^2 + 1^2 = 49^2 + 10^2$ということは…
+      \item $2501 = (50+\sqrt{-1})(50-\sqrt{-1}) = (49+10\sqrt{-1})(49-10\sqrt{-1})$
+      \item ぜんぜん違う数の積に分解できる！
+      \item 素数であれば、このような分解はありえないことが証明できます。
+      \begin{itemize}
+        \item もちろんこのことを証明するために、複素数まで拡張した素因数分解を深く知る必要はあります。
+      \end{itemize}
+      \item したがって、 $2501$ は素数ではありません。
+      \item 実は $50+\sqrt{-1}$ や $49+10\sqrt{-1}$ は「素数」ではないので、上の分解は「素因数分解」ではないのですが、ここでは
+      \begin{itemize}
+        \item 何らかの数の積に分解できたこと
+        \item その分解した要素は、かたや $50+\sqrt{-1}$ 、かたや $49+10\sqrt{-1}$ と一見して違うものであること
+      \end{itemize}
+      が重要です。
+    \end{itemize}
+  
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{ガウス整数の素元分解}
+  
+    \begin{itemize}
+      \item $2501$ は素数か？という、虚数なんて全く関係なさそうな整数の問題が、虚数を含めた「素因数分解」の様子を深く知ることで解決できる
+      \begin{itemize}
+        \item 正確には、このように複素数にまで拡張した整数っぽいものを「ガウス整数」といい、ガウス整数においては素因数分解ではなく「素元分解」といいます。
+      \end{itemize}
+      \item このこともまた、「虚数を数学的な考察の対象から外してしまうことがもったいない理由」の1つになりそうです。
+      \pause
+      \item というか、3次方程式の解の公式の例といい、ガウス整数の素元分解の例といい…
+      \item どうやら虚数って、「存在しないけど便利だから導入しよう」というよりは、もっと本質的に、整数とか実数とかいう対象と不可分なものなんじゃないか？という疑問が出てきませんか？
+    \end{itemize}
+  
+  \end{frame}
+  
+  \begin{frame}
+    \frametitle{いったんまとめ}
+  
+    \begin{itemize}
+      \item 3次方程式の解の公式には、実数解を表示する場合であっても、負の数の平方根が現れる。
+      \item 整数の性質は、整数の概念を複素数にまで拡張したガウス整数を考えることで、より深く理解できる。
+    \end{itemize}
+
+    \begin{block}{この章はこれで終わり}
+      質問などあればいつでもどうぞ！
+    \end{block}
+  
+  \end{frame}
+
+  \section{数は作れるという話}
+
+  \subsection{抽象型(interface)と数}
+
+  \begin{frame}
+    \frametitle{なんか}
+  
+    なんか書く
+  
+  \end{frame}
+
+  \subsection{自然数から整数を作る}
+
+  \begin{frame}
+    \frametitle{なんか}
+  
+    なんか書く
+  
+  \end{frame}
+
+  \subsection{整数から虚数を作る}
+
+  \begin{frame}
+    \frametitle{なんか}
+  
+    なんか書く
+  
+  \end{frame}
+
+  \section{まとめ}
+
+  \begin{frame}
+    \frametitle{なんか}
+  
+    なんか書く
+  
+  \end{frame}
+
+\end{document}
