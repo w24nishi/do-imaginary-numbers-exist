@@ -1,4 +1,5 @@
 \documentclass[dvipdfmx]{beamer}
+\usepackage{pxjahyper}  % 「しおり」の日本語対応
 
 \usetheme{Madrid}
 \useoutertheme[subsection=false]{smoothbars}
@@ -6,20 +7,17 @@
 \setbeamertemplate{footline}[frame number]
 \setbeamerfont{footline}{size=\normalsize,series=\bfseries}
 \setbeamercolor{footline}{fg=black,bg=black}
-% \usefonttheme{professionalfonts}
-% \setbeamertemplate{frametitle}[default][center]
-% \setbeamercovered{transparent}
 
 \title{虚数って存在するの？}
 \author{西 航}
-\date{\today}
+\date{2021/10/19}
 
 \begin{document}
   \maketitle
 
   \begin{frame}
     \frametitle{はじめに}
-  
+
     \begin{alertblock}{質問する奴は偉い}
       \begin{itemize}
         \item 初めに質問する奴は偉い
@@ -43,12 +41,12 @@
       \item 今回、ところどころで質問タイムも設けるつもりですが、それに関係なく、いつでも何でも聞いてください。
       \item 時間の都合で拾いきれない場合などは、回答は後日になるかもしれませんが、そういう場合であっても質問は大歓迎です。
     \end{itemize}
-      
+
   \end{frame}
 
   \begin{frame}
     \frametitle{目次}
- 
+
     \tableofcontents
 
   \end{frame}
@@ -59,7 +57,7 @@
 
   \begin{frame}
     \frametitle{いくつかの質問}
-  
+
     \begin{block}{質問1}
       $\sqrt{-1}$は存在するか？
     \end{block}
@@ -80,13 +78,14 @@
 
     \begin{block}{（筆者なりの）回答}
       現代の数学は、これらの質問に答える必要がないように構成されている。
+      ただし、どれか1つの存在を認めるのであれば、ほかの2つについても認めるべき。
     \end{block}
 
   \end{frame}
 
   \begin{frame}
     \frametitle{もう1つ質問}
-  
+
     \begin{block}{質問}
       数とは何か？
     \end{block}
@@ -101,16 +100,16 @@
         \item 自然数とは何か？
         \item 実数とは何か？
       \end{itemize}
-      という質問であれば、ある程度答えることができる。
+      という質問であれば、ある程度決まった答えがある。
     \end{block}
-  
+
   \end{frame}
 
   \subsection{あったりなかったりする$\sqrt{-1}$}
 
   \begin{frame}
     \frametitle{$\sqrt{-1}$はあったりなかったりする？}
-  
+
     \begin{itemize}
       \item $\sqrt{-1}$は、ある意味では存在します。
       \item あなたは、マジで$5$で割った余りにしか興味がないとしましょう。
@@ -119,58 +118,61 @@
       \end{itemize}
       \item あなたにとって整数とは、$0, 1, 2, 3, 4$だけのことです。
       \begin{itemize}
-        \item $6$や$11$や$21$や$17426$といった整数は、あなたにとってはすべて$1$です。マジで$5$で割った余りにしか興味がないので。
+        \item $6$や$11$や$21$といった整数は、あなたにとってはすべて$1$です。マジで$5$で割った余りにしか興味がないので。
       \end{itemize}
       \item あなたは、整数の足し算や掛け算ができます。たとえば、$3 \times 4 = 2$です。
       \begin{itemize}
         \item 普通の人は$12$と言うのでしょうが、あなたにとってそれは$2$です。
       \end{itemize}
     \end{itemize}
-  
+
   \end{frame}
 
   \begin{frame}
     \frametitle{マジで$5$で割った余りにしか興味がない人の話}
-  
+
     \begin{itemize}
       \item $-1$というのは、$1$を足して$0$になる数のこと。つまり$4$です。
       \item $\sqrt{-1}$というのは、$2$乗して$4$になる数のこと。つまり$2$です。
       \item あなたにとって、$\sqrt{-1}$は存在します。$2$のことですよね。
       \begin{itemize}
         \item 実は、$3$のことでもあります。
+        \item 1つに決まらないのはどうなんだという気もしますが、あるのかないのかでいうと、あるということですね。
       \end{itemize}
     \end{itemize}
-  
+
   \end{frame}
 
   \begin{frame}
     \frametitle{マジで$7$で割った余りにしか興味がない人の話}
-  
+
     \begin{itemize}
       \item 続いて、マジで$7$で割った余りにしか興味がないとしましょう。
       \item あなたにとって整数とは、$0, 1, 2, 3, 4, 5, 6$だけのことです。
       \item あなたは、整数の足し算や掛け算ができます。たとえば、$3 \times 4 = 5$です。
+
       \pause
+
       \item $-1$というのは、$1$を足して$0$になる数のこと。つまり$6$です。
       \item $\sqrt{-1}$というのは、$2$乗して$6$になる数のことですが…
       \item $0, 1, 2, 3, 4, 5, 6$のどれも、$2$乗して$6$にはなりません。
       \item $\sqrt{-1}$は存在しませんね。
     \end{itemize}
-  
+
   \end{frame}
 
   \begin{frame}
     \frametitle{いったんまとめ}
-  
+
     \begin{itemize}
-      \item 現代の数学は、$\sqrt{-1}$は存在するか？数とは何か？といった疑問に答える必要がないように構成されている。
+      \item 現代の数学は、$\sqrt{-1}$は存在するか？数とは何か？といった質問に答える必要がないように構成されている。
       \item $\sqrt{-1}$が存在することが証明できるようなセッティングもあるし、存在しないことが証明できるようなセッティングもある。
     \end{itemize}
 
     \begin{block}{この章はこれで終わり}
       質問などあればいつでもどうぞ！
     \end{block}
-  
+
   \end{frame}
 
   \section{複素数を使うと嬉しいという話}
@@ -179,7 +181,7 @@
 
   \begin{frame}
     \frametitle{2次方程式の解の公式}
-  
+
     次の事実は、おそらく一度は勉強したことがあると思います。
     \begin{block}{2次方程式の解の公式}
       方程式
@@ -199,12 +201,12 @@
     それは当然といえば当然で、
     複素数に慣れていない人にとっては「複素数解がある」と考えるほうが非常識、
     解なしとするのが常識的でしょう。
-  
+
   \end{frame}
 
   \begin{frame}
     \frametitle{3次方程式の解の公式}
-  
+
     では、次の公式はご存知でしょうか。
     \begin{block}{3次方程式の解の公式}
       方程式
@@ -213,7 +215,7 @@
       \]
       の解の1つは、
       \[
-        x = \sqrt[3]{\frac{q}{2} + \frac{\sqrt{27q^2 + 4p^3}}{6\sqrt{3}}} + \sqrt[3]{\frac{q}{2} - \frac{\sqrt{27q^2 + 4p^3}}{6\sqrt{3}}} - \frac{a}{3} 
+        x = \sqrt[3]{\frac{q}{2} + \frac{\sqrt{27q^2 + 4p^3}}{6\sqrt{3}}} + \sqrt[3]{\frac{q}{2} - \frac{\sqrt{27q^2 + 4p^3}}{6\sqrt{3}}} - \frac{a}{3}
       \]
       である。
       ただし、$p, q$は$a, b, c$を使って
@@ -222,12 +224,12 @@
       \]
       で与えられる数とする。
     \end{block}
-  
+
   \end{frame}
 
   \begin{frame}
     \frametitle{3次方程式の解の公式}
-  
+
     公式は知らなくても全く問題ないですが、とにかく、この公式を使って
     \[
       x^3 - 15x - 4 = 0
@@ -238,12 +240,12 @@
       x = \sqrt[3]{2 + 11\sqrt{-1}} + \sqrt[3]{2 - 11\sqrt{-1}}
     \]
     となります。
+
+    \pause
+
     $(2 \pm \sqrt{-1})^3 = 2 \pm 11\sqrt{-1}$ なので、結局
     \[
-    \begin{split}
-      x & = (2 + \sqrt{-1}) + (2 - \sqrt{-1})\\
-        & = 4
-    \end{split}
+      x = (2 + \sqrt{-1}) + (2 - \sqrt{-1}) = 4
     \]
     です。
     実際、
@@ -251,46 +253,53 @@
       4^3 - 15 \times 4 - 4 = 0
     \]
     なので、この公式が正しいことがわかります。
-  
+
   \end{frame}
 
   \begin{frame}
     \frametitle{3次方程式の解の公式}
-  
+
     \begin{itemize}
       \item 現代の人間としては、これで3次方程式を解くことができた、めでたしめでたし、となるわけですが…
       \item この公式（を、この方程式にあてはめた結果）は、発見された16世紀当時には、かなり「ヤバい」方法とされたようです。
       \item $x = \sqrt[3]{2 + 11\sqrt{-1}} + \sqrt[3]{2 - 11\sqrt{-1}} = 4$
+
       \pause
+
       \item 解は結果的にはちゃんと求まってるけど、\alert{負の数の平方根とかいうあり得ないもの}を経由しとるやんけ！！！
+
       \pause
+
       \item 歴史には詳しくないですが、どうやら当時（というか17世紀くらいまでのヨーロッパで）は、負の数にすら抵抗があったようです。
       \item でも3次方程式が解けないよりは、解けるほうがどう考えてもいいですよね。
       \item これは、「虚数を数学的な考察の対象から外してしまうことがもったいない理由」の1つになりそうです。
     \end{itemize}
-  
+
   \end{frame}
 
   \subsection{ガウス整数}
 
   \begin{frame}
     \frametitle{素数クイズ}
-  
+
     突然ですが、次の問題を考えてみてください。
     \begin{block}{問題}
       $2501$は素数か？
     \end{block}
+
     \pause
+
     次の等式がヒントです。
     \begin{block}{ヒント}
       $2501 = 50^2 + 1^2 = 49^2 + 10^2$
     \end{block}
-  
+    このヒントでわかる人は、今日の話聞かなくてもよさそうな気がしますが…
+
   \end{frame}
 
   \begin{frame}
     \frametitle{答え}
-  
+
     \begin{block}{答え}
       $2501$は素数ではない。
     \end{block}
@@ -303,12 +312,12 @@
         \item 一般に $a^2 - b^2 = (a+b)(a-b)$ です。
       \end{itemize}
     \end{itemize}
-  
+
   \end{frame}
 
   \begin{frame}
     \frametitle{どのあたりがヒントになっていたか}
-  
+
     \begin{itemize}
       \item $2501 = 50^2 + 1^2 = 49^2 + 10^2$ということは…
       \item $2501 = (50+\sqrt{-1})(50-\sqrt{-1}) = (49+10\sqrt{-1})(49-10\sqrt{-1})$
@@ -317,83 +326,481 @@
       \begin{itemize}
         \item もちろんこのことを証明するために、複素数まで拡張した素因数分解を深く知る必要はあります。
       \end{itemize}
-      \item したがって、 $2501$ は素数ではありません。
-      \item 実は $50+\sqrt{-1}$ や $49+10\sqrt{-1}$ は「素数」ではないので、上の分解は「素因数分解」ではないのですが、ここでは
+      \item 上の分解は「素因数分解」ではないのですが、ここでは
       \begin{itemize}
         \item 何らかの数の積に分解できたこと
         \item その分解した要素は、かたや $50+\sqrt{-1}$ 、かたや $49+10\sqrt{-1}$ と一見して違うものであること
       \end{itemize}
       が重要です。
+      \item したがって、 $2501$ は素数ではありません。
     \end{itemize}
-  
+
   \end{frame}
 
   \begin{frame}
     \frametitle{ガウス整数の素元分解}
-  
+
     \begin{itemize}
       \item $2501$ は素数か？という、虚数なんて全く関係なさそうな整数の問題が、虚数を含めた「素因数分解」の様子を深く知ることで解決できる
       \begin{itemize}
         \item 正確には、このように複素数にまで拡張した整数っぽいものを「ガウス整数」といい、ガウス整数においては素因数分解ではなく「素元分解」といいます。
       \end{itemize}
       \item このこともまた、「虚数を数学的な考察の対象から外してしまうことがもったいない理由」の1つになりそうです。
-      \pause
-      \item というか、3次方程式の解の公式の例といい、ガウス整数の素元分解の例といい…
-      \item どうやら虚数って、「存在しないけど便利だから導入しよう」というよりは、もっと本質的に、整数とか実数とかいう対象と不可分なものなんじゃないか？という疑問が出てきませんか？
     \end{itemize}
-  
+
   \end{frame}
-  
+
   \begin{frame}
     \frametitle{いったんまとめ}
-  
+
     \begin{itemize}
-      \item 3次方程式の解の公式には、実数解を表示する場合であっても、負の数の平方根が現れる。
+      \item 3次方程式の解の公式には、実数解を表示する場合であっても、負の数の平方根が現れることがある。
       \item 整数の性質は、整数の概念を複素数にまで拡張したガウス整数を考えることで、より深く理解できる。
+
+      \pause
+
+      \item このあたりの例を見ると、どうやら虚数って、整数とか実数とかいう対象を深く知ろうと思ったら必然的に出くわすもののようだ、という感覚になりませんか？
+      \item 「ないけど便利だから人間が勝手に作った」というよりは、もっと本質的に、整数や実数と不可分なものっぽくない？
     \end{itemize}
 
     \begin{block}{この章はこれで終わり}
       質問などあればいつでもどうぞ！
     \end{block}
-  
+
   \end{frame}
 
   \section{数は作れるという話}
 
-  \subsection{抽象型(interface)と数}
+  \subsection{interfaceと数}
 
   \begin{frame}
-    \frametitle{なんか}
-  
-    なんか書く
-  
+    \frametitle{プログラミングの話}
+
+    \begin{block}{みなさんに質問}
+      interfaceというプログラミング用語、知ってますか？
+    \end{block}
+
+    \begin{itemize}
+      \item Java, C\#, TypeScriptなどでは普通に使われる概念だと思います。
+      \item 実装ではなくinterfaceに依存しましょう、とかよく言われるやつです。
+      \item みんな知ってそうであれば説明は省略します。
+      \item 知らなそうな人がいれば説明します。
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{interface}
+
+    \begin{itemize}
+      \item interface（インターフェイス）とは、一言でいえば、実装のないクラスです。
+      \item クラスなのでメソッドを持ちますが、interfaceのメソッドでは名前と型だけが定義されます。
+      \item あるinterfaceを実装（継承）するクラスは、そのinterfaceの要請を満たす必要があります。
+      \begin{itemize}
+        \item というのはやや曖昧な言い方で、もうちょっとプログラミング的な説明をすれば、interfaceで定義されたメソッドを実装する必要があります。
+      \end{itemize}
+      \item あるinterfaceを実装したクラスのインスタンスは、そのinterface型の変数として扱えます。
+      \begin{itemize}
+        \item たとえば、StringValidatorインターフェイスを実装するZipCodeValidatorクラスとPhoneNumberValidatorクラスがある場合、これらのクラスのインスタンスはStringValidator型として統一的に扱うことができます。
+      \end{itemize}
+    \end{itemize}
+
+  \end{frame}
+
+  % \begin{frame}
+  %   \frametitle{interfaceの例}
+
+  %   たとえば、以下のような状況を考えます。
+  %   \begin{itemize}
+  %     \item 入力された文字列が郵便番号として正しい形式かどうかを判定する ZipCodeValidator クラスと、
+  %     \item 入力された文字列が電話番号として正しい形式かどうかを判定する PhoneNumberValidator クラスを実装したいとします。
+  %     \item 今後もまた別の、入力された文字列が○○として正しい形式かどうかを判定するクラスがほしくなるかもしれませんが、そのようなクラスも今回の2つと同じように扱いたいとします。
+  %     \item これらを統一的に扱うために、 StringValidator インターフェイスを定義します。
+  %   \end{itemize}
+
+  % \end{frame}
+
+  \begin{frame}
+    \frametitle{interfaceと自然数}
+
+    \begin{itemize}
+      \item 現代の数学では、何かを定義するときにinterfaceのような形式をとることが多いです。
+      \item 文字列を受け取ってブール値を返すisAcceptable()メソッドが定義されていればStringValidatorと呼びます、というのと同じような定義がしばしばなされます。
+
+      \pause
+
+      \item 「このような条件を満たす関数を$C^1$級関数と呼びます」とか、
+      \item 「このような条件を満たす位相空間をHausdorff空間と呼びます」とか。
+
+      \pause
+
+      \item 現代的には、自然数もinterfaceのような形式で定義されます。
+      \item その条件は、ペアノの公理と呼ばれるものです。
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{ペアノの公理}
+
+    \begin{itemize}
+      \item ペアノの公理とは、次のようなものです。
+      \item 「うわっ」と思ったら、無理に読まなくても大丈夫です。
+    \end{itemize}
+    \begin{block}{ペアノの公理}
+      集合 $N, S, O$ が以下の条件を満たすとき、組$(N, S, O)$ をペアノシステムといい、$N$の要素を自然数という。
+      \begin{enumerate}
+        \item $O \in N$
+        \item $S$ は $N$ から $N$ への写像である
+        \item $\forall n \in N, S(n) \neq O$
+        \item $\forall m, n \in N, (S(m) = S(n) \Rightarrow m = n)$
+        \item $\forall A \subset N, ((O \in A \land (\forall n \in A, S(n) \in A)) \Rightarrow A = N)$
+      \end{enumerate}
+    \end{block}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{ペアノの公理をざっくり言い直すと}
+
+    やや不正確になる可能性もありますが…
+    \begin{block}{ペアノの公理（ざっくり）}
+      集合 $N$ 、「次の数」を決めるルール $S$ 、「最小の自然数」 $O$ が以下の条件を満たすとき、組 $(N, S, O)$ をペアノシステムといい、 $N$ の要素を自然数という。
+      \begin{enumerate}
+        \item $O$ は $N$ の要素である。
+        \item $N$ の要素 $x$ に対して、「その次の数」 $S(x)$ もまた $N$ の要素である。
+        \item $O$ は $N$ のどの要素の「次の数」にもならない。
+        \item $N$ の要素 $x, y$ に対して、それぞれの「次の数」 $S(x), S(y)$ が等しくなるのは、 $x$ と $y$ が等しい場合のみである。
+        \item $N$ は、上記の条件を満たすための最低限の要素しか含まない。
+      \end{enumerate}
+    \end{block}
+    \begin{itemize}
+      \item interfaceのように、\alert{何かの条件を満たしさえすればなんでも自然数と呼ぶ}ということだけ認識してくれれば大丈夫です。
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{実数の公理}
+
+    実数にも同じような公理があります。
+    \begin{block}{実数の公理（ざっくり）}
+      集合 $R$ 、和 $+$ 、積 $\times$ 、順序 $\leq$ が以下の条件を満たすとき、 $R$ の要素を実数という。
+      \begin{itemize}
+        \item $(R, +, \times, \leq)$ は順序体である。
+        \item $(R, \leq)$ の上に有界な部分集合は上限を持つ。
+      \end{itemize}
+    \end{block}
+    \begin{itemize}
+      \item もはやある程度の知識を前提とした言い方になっちゃってますが…
+      \item やはり、interfaceのように\alert{何かを満たしさえすればなんでも実数と呼ぶ}ということだけ認識してくれれば大丈夫です。
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{自然数は存在するか？}
+
+    いま、次の質問について考えましょう。
+    \begin{block}{質問}
+      自然数は存在するか？
+    \end{block}
+
+    \pause
+
+    これは、現代的には以下の質問と同じことです。
+    \begin{block}{質問の言い換え}
+      ペアノシステムの実装は存在するか？
+    \end{block}
+
+    \pause
+
+    問題がここまで明確になると、回答もしやすいです。
+    \begin{block}{回答}
+      存在する。
+    \end{block}
+    いろいろな実装が可能ですが、フォン・ノイマンの構成法が有名です。
+    興味があれば調べてみてください。
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{自然数の足し算と掛け算}
+
+    \begin{itemize}
+      \item ペアノシステムでは、どの自然数にも「次の数」があります。
+      \item これを使って、足し算と掛け算も「作る」ことができます。
+      \item たとえば、 $n+1$ は $n$ の次の数のことです。
+      \item $n+m$ は、 $n$ に対して、次の数をとる操作を $m$ 回繰り返したものです。
+      \begin{itemize}
+        \item 自然数を作ろうとしているときに「$m$ 回繰り返す」ということを気軽に言ってはいけないので、本当は同様の操作をうまいこと表現します。
+      \end{itemize}
+      \item $n \times m$ も、そんな感じで作れます。
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{交換則、結合則、分配則}
+
+    このようにして作った足し算と掛け算には、以下の特徴があります。
+    \begin{block}{交換則}
+      \[a+b = b+a\]
+      \[ab = ba\]
+    \end{block}
+
+    \begin{block}{結合則}
+      \[(a+b)+c = a+(b+c)\]
+      \[(ab)c = a(bc)\]
+    \end{block}
+
+    \begin{block}{分配則}
+      \[a(b+c) = ab+ac\]
+    \end{block}
+
   \end{frame}
 
   \subsection{自然数から整数を作る}
 
   \begin{frame}
-    \frametitle{なんか}
-  
-    なんか書く
-  
+    \frametitle{自然数から整数を作る}
+
+    \begin{itemize}
+      \item ここからは、自然数は普通に知っているものとしましょう。
+      \item フォン・ノイマンの方法で構成したペアノシステム、とか考えると無駄にわかりづらくなります。
+      \item プログラミングにおいて実装を意識せずにインターフェイスのみを意識するのと同様に、どのように構成されるかよりも、どんな特徴を持っていて、どんな操作が可能なのかを気にするほうが重要です。
+      \item いまから、自然数を使って整数を作ります。
+      \begin{itemize}
+        \item 数字とか記号がたくさん出てくるので、「うわ無理」と思ったらすべて理解しようとしなくても大丈夫です。
+        \item 部分的にでも、なんとなく整数作ろうとしてるっぽいな、と思いながら見てください。
+      \end{itemize}
+    \end{itemize}
+
   \end{frame}
 
-  \subsection{整数から虚数を作る}
+  \begin{frame}
+    \frametitle{自然数の引き算}
+
+    \begin{itemize}
+      \item 自然数のペア $(a,b)$ を考えます。
+      \item 「等しさ」 $(a,b) = (c,d)$ を $a+d = b+c$ で定義します。
+      \begin{itemize}
+        \item 「差」 $a - b$ を、マイナス記号を使わずに定義しようとしています。
+        \item 例えば、 $(1,4) = (2,5) = (3,6) = \cdots$ です。
+        \item マイナス記号を使って表現すれば、$1-4 = 2-5 = 3-6 = \cdots$ です。
+      \end{itemize}
+
+      \pause
+
+      \item 足し算 $(a,b) + (c,d)$ を $(a+c, b+d)$ で定義します。
+      \begin{itemize}
+        \item $(a-b) + (c-d) = (a+c) - (b+d)$ のことです。
+      \end{itemize}
+
+      \pause
+
+      \item 掛け算 $(a,b) \times (c,d)$ を $(ac+bd, ad+bc)$ で定義します。
+      \begin{itemize}
+        \item $(a-b) \times (c-d) = (ac+bd) - (ad+bc)$ のことです。
+      \end{itemize}
+
+      \pause
+
+      \item この足し算と掛け算は、自然数のそれらと同じように、交換則、結合則、分配則を満たします。
+      \begin{itemize}
+        \item ここでは証明はしませんが、少々複雑なだけで、難しくはないです。
+      \end{itemize}
+    \end{itemize}
+
+  \end{frame}
 
   \begin{frame}
-    \frametitle{なんか}
-  
-    なんか書く
-  
+    \frametitle{自然数から整数を作る}
+
+    \begin{itemize}
+      \item ここで、ペア $(n,0)$ は自然数 $n$ と自然に同一視できます。
+      \item $(a,b) = (a,0) + (0,1) \times (b,0)$ なので、 $(0,1)$ を $-1$ とも書くことにすれば、上の同一視も含めて $(a,b) = a + (-1) \times b$ です。
+      \item $(a,b)$ を単に $a-b$ とも、 $(0,b)$ を単に $-b$ とも書くことにします。
+      \item このようにして、自然数の引き算によって得られる数すべてと、その足し算、掛け算を作ることができました。
+      \item この構造を整数と呼びます。
+      \item これで、自然数から整数を作ることができました。
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{自然数から整数が作れた}
+
+    \begin{itemize}
+      \item 自然数を使って引き算を「作る」ことができ、整数を「作る」ことができました。
+      \item $1$の存在を認めるのであれば、$-1$の存在も認めるべきだと言えそうです。
+      \begin{itemize}
+        \item そもそも今の文脈では $1$ も正体不明でした（interface的に定義されていました）が、 $1$ が存在することと同じくらい確かに $-1$ が存在しているとは言えると思います。 $1$ から $-1$ を作れるからです。
+      \end{itemize}
+    \end{itemize}
+
+  \end{frame}
+
+  \subsection{整数から複素数を作る}
+
+  \begin{frame}
+    \frametitle{整数から複素数を作る}
+
+    \begin{itemize}
+      \item ここからは、整数は普通に知っているものとしましょう。
+      \item 自然数のペアに特殊な「等しさ」を導入したもの、とか考えると無駄にわかりづらくなります。
+      \item プログラミングにおいて実装を意識せずにインターフェイスのみを意識するのと同様に、どのように構成されるかよりも、どんな操作が可能なのかを気にするべきです。
+      \item いまから、整数を使って複素数を作ります。
+      \begin{itemize}
+        \item やはり数字とか記号がたくさん出てくるので、無理にすべて理解しようとしなくても大丈夫です。
+        \item 部分的にでも、なんとなく複素数作ろうとしてるっぽいな、と思いながら見てください。
+      \end{itemize}
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{整数から複素数を作る}
+
+    \begin{itemize}
+      \item 整数のペア $(a,b)$ を考えます。
+      \item 「等しさ」 $(a,b) = (c,d)$ を $a=c$ かつ $b=d$ で定義します。
+      \begin{itemize}
+        \item 「複素数」 $a + bi$ を、 $i$ を使わずに定義しようとしています。
+      \end{itemize}
+
+      \pause
+
+      \item 足し算 $(a,b) + (c,d)$ を $(a+c, b+d)$ で定義します。
+
+      \pause
+
+      \item 掛け算 $(a,b) \times (c,d)$ を $(ac-bd, ad+bc)$ で定義します。
+
+      \pause
+
+      \item この足し算と掛け算は、自然数や整数のそれらと同じように、交換則、結合則、分配則を満たします。
+
+      \pause
+
+      \item ここで、 $(a,0)$ は整数 $a$ と自然に同一視できます。
+      \item $(a,b) = (a,0) + (b,0) \times (0,1)$ なので、$(0,1)$ を $i$ とも書き、 $(a,b)$ を $a+bi$ とも書くことにします。
+
+      \pause
+
+      \item ここで、 $i = \sqrt{-1}$ です。
+      \begin{itemize}
+        \item $i^2 = (0,1) \times (0,1) = (-1,0) = -1$ だからです。
+      \end{itemize}
+      \item この整数のペアと、「等しさ」と、足し算と、掛け算の構造を複素数と呼びます。
+      \item これで、整数から複素数を作ることができました。
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{整数から複素数が作れた}
+
+    \begin{itemize}
+      \item 整数を使って複素数を「作る」ことができました。
+      \item $-1$ の存在を認めるのであれば、 $\sqrt{-1}$ の存在も認めるべきだと言えそうです。
+      \begin{itemize}
+        \item そもそも今の文脈では $-1$ も正体不明でした（やや機械的な操作で無理やり作ったような印象がありました）が、 $-1$ が存在することと同じくらい確かに $\sqrt{-1}$ が存在しているとは言えると思います。 $-1$ から $\sqrt{-1}$ を作れるからです。
+      \end{itemize}
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{いったんまとめ}
+
+    \begin{itemize}
+      \item 現代の数学においては、interface的な定義がなされることがけっこう多い。
+      \item 自然数や実数もそうで、どのように作られるかに関係なく、一定の条件を満たしてさえいれば自然数や実数と呼ばれる。
+      \item その意味で、自然数は存在する（ペアノシステムは実装可能）。
+      \item 自然数があれば、整数が作れる。
+      \item 整数があれば、複素数（虚数）が作れる。
+    \end{itemize}
+
+    \begin{block}{この章はこれで終わり}
+      質問などあればいつでもどうぞ！
+    \end{block}
+
   \end{frame}
 
   \section{まとめ}
 
   \begin{frame}
-    \frametitle{なんか}
-  
-    なんか書く
-  
+    \frametitle{あらためて、最初の質問}
+
+    \begin{block}{質問1}
+      $\sqrt{-1}$は存在するか？
+    \end{block}
+
+    \begin{block}{質問2}
+      $-1$は存在するか？
+    \end{block}
+
+    \begin{block}{質問3}
+      $1$は存在するか？
+    \end{block}
+
+    \begin{itemize}
+      \item ここまでの話をもとに、みなさんはどう思われますか？
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{あらためて、もう1つの質問}
+
+    \begin{block}{質問}
+      数とは何か？
+    \end{block}
+
+    \begin{itemize}
+      \item ここまでの話をもとに、みなさんはどう思われますか？
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{最後に、筆者の感覚}
+
+    筆者の感覚では、
+    \begin{itemize}
+      \item \alert{自然数は存在します}。
+      \item $1$ や $3$ や $7$ といった数は物理的には「ない」し、観測することも不可能な概念だと思いますが、それでも確かに存在しているものと考えてよいと思います。
+      \begin{itemize}
+        \item ある意味、「幽霊は存在する」と同じようなノリで言ってます。
+      \end{itemize}
+
+      \pause
+
+      \item 同じように、\alert{負の数は存在します}。
+      \item やはり物理的には「ない」ですが、確かに存在しているものと考えてよいと思います。
+
+      \pause
+
+      \item 同じように、\alert{虚数は存在します}。
+      \item やはり物理的には「ない」ですが、確かに存在しているものと考えてよいと思います。
+
+      \pause
+
+      \item それぞれの存在の確かさは、筆者にとってまったく同じです。
+      \item たまに聞く「自然数は存在するけど虚数は存在しない」という主張は、どういう意味で言ってるんだろうな、と不思議に思います。
+    \end{itemize}
+
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{おわり}
+
+    \begin{itemize}
+      \item おわりです。
+      \item Thank you for your attention!
+    \end{itemize}
+
   \end{frame}
 
 \end{document}
